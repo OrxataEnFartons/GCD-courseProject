@@ -70,21 +70,22 @@ Transformations on the original data
 ====================================
 
 1. First step is merging the training and the test set to create a unique dataset. In the datasets, the measurements values and the corresponding subject and activity values associated for each measurement are stored in three different files. So we can see that data is loaded into:
-> dim(subject_test)
-[1] 2947    1
-> dim(y_test)
-[1] 2947    1
-> dim(X_test)
-[1] 2947  561
+* subject_test, with 2947 rows and 1 column
+* y_test, with 2947 rows and 1 column
+* X_test with 2947 rows and 561 columns
 
 and 
 
-> dim(subject_train)
-[1] 7352    1
-> dim(y_train)
-[1] 7352    1
-> dim(X_train)
-[1] 7352  561
+* subject_train, with 7352 rows and 1 column
+* y_train, with 7352 rows and 1 column
+* X_train with 7352 rows and 561 columns
 
+Both sets are merged in:
 
+* subject_all, with 10299 rows and 1 column
+* y_all, with 10299 rows and 1 column
+* X_all with 10299 rows and 561 columns
+
+2. Extracts only the measurements on the mean and standard deviation for each measurement.
+   
 
