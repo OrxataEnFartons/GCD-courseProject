@@ -17,8 +17,8 @@ fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequ
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-*tBodyAcc-XYZ                    #body acceleration 
-*tGravityAcc-XYZ                 #gravity acceleration 
+* tBodyAcc-XYZ                    #body acceleration 
+* tGravityAcc-XYZ                 #gravity acceleration 
 *tBodyAccJerk-XYZ                #body linear acceleration Jerk signal
 *tBodyGyro-XYZ                   #body angular velocity 
 *tBodyGyroJerk-XYZ               #body angular velocity Jerk signal
