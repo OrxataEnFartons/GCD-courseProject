@@ -92,5 +92,10 @@ Both sets are merged in
 
 3) Uses descriptive activity names to name the activities in the data set. In the y_all data frame activities are representes as numbers. In the activity_labels.txt file provided in the dataset we can find the correspondence between these numbers and the activity they represent. The numbers are changed for the more friendly name of the activity. For instance, 1 = walking. 
 
-4) 
+4) Appropriately labels the data set with descriptive variable names. The names provided for the column variables are changed to more friendly names. 
+
+* When the names begin with t or f that means they are referring to time or frequency, so the abbreviation is changed for the whole word. 
+* Parenthesis are removed, all means becomen 'mean' and the std specified as standard deviation. 
+* The X, Y and Z letters, that could be easily misunderstood as auxiliar names for variables, are clearly changed by 'on the X/Y/Z axis'.
+* The measurement abbreviation names are changed by their full name. BodyAcc, body acceleration; GravityAcc, gravity acceleration; BodyAccJerk, body linear acceleration Jerk signal; BodyGyro, body angular velocity; BodyGyroJerk, body angular velocity Jerk signal; BodyAccMag, body acceleration magnitude; GravityAccMag, gravity acceleration magnitude; BodyAccJerkMag, body acceleration Jerk signal magnitude; BodyGyroMag, body angular velocity magnitude; BodyGyroJerkMag, body angular velocity Jerk signal magnitude. 
 
