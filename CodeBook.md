@@ -69,7 +69,8 @@ The complete list of variables of each feature vector is available in 'features.
 Transformations on the original data
 ====================================
 
-1. First step is merging the training and the test set to create a unique dataset. In the datasets, the measurements values and the corresponding subject and activity values associated for each measurement are stored in three different files. So we can see that data is loaded into:
+1. First step is merging the training and the test set to create a unique dataset. In the datasets, the measurements values and the corresponding subject and activity values associated for each measurement are stored in three different files. So we can see that data is loaded into
+
 * subject_test, with 2947 rows and 1 column
 * y_test, with 2947 rows and 1 column
 * X_test with 2947 rows and 561 columns
@@ -87,5 +88,7 @@ Both sets are merged in:
 * X_all with 10299 rows and 561 columns
 
 2. Extracts only the measurements on the mean and standard deviation for each measurement.
-   
+   The features.txt file holds the names of the column variables in the measurements table. These names are assigned to the X_all data frame and after that a new version of X_all is created keeping only those columns whose variable names contain the strings "mean" or "std".
+
+
 
