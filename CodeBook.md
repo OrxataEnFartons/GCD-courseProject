@@ -99,3 +99,8 @@ Both sets are merged in
 * The X, Y and Z letters, that could be easily misunderstood as auxiliar names for variables, are clearly changed by 'on the X/Y/Z axis'.
 * The measurement abbreviation names are changed by their full name. BodyAcc, body acceleration; GravityAcc, gravity acceleration; BodyAccJerk, body linear acceleration Jerk signal; BodyGyro, body angular velocity; BodyGyroJerk, body angular velocity Jerk signal; BodyAccMag, body acceleration magnitude; GravityAccMag, gravity acceleration magnitude; BodyAccJerkMag, body acceleration Jerk signal magnitude; BodyGyroMag, body angular velocity magnitude; BodyGyroJerkMag, body angular velocity Jerk signal magnitude. 
 
+In a last step blanks are changed by underscores.
+
+5) From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject. To do this first we need to bind the subject and activity columns to the measurements dataset. This will allow us to use the melt function on the whole data frame setting the subject and activity values as a kind of primary key. For each combination of subject-activity we will find several measurements for each one of the rest of variables. We want the mean of each one of these groups, and we calculate that with the dcast function once X_all has been melted. 
+
+6) Finally, the resulting dataset is written in cp_result.txt. 
