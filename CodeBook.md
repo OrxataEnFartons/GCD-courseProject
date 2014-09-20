@@ -64,3 +64,27 @@ Additional vectors obtained by averaging the signals in a signal window sample. 
 * tBodyGyroJerkMean
 
 The complete list of variables of each feature vector is available in 'features.txt'
+
+
+Transformations on the original data
+====================================
+
+1. First step is merging the training and the test set to create a unique dataset. In the datasets, the measurements values and the corresponding subject and activity values associated for each measurement are stored in three different files. So we can see that data is loaded into:
+> dim(subject_test)
+[1] 2947    1
+> dim(y_test)
+[1] 2947    1
+> dim(X_test)
+[1] 2947  561
+
+and 
+
+> dim(subject_train)
+[1] 7352    1
+> dim(y_train)
+[1] 7352    1
+> dim(X_train)
+[1] 7352  561
+
+
+
