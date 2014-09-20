@@ -69,7 +69,7 @@ The complete list of variables of each feature vector is available in 'features.
 Transformations on the original data
 ====================================
 
-1. First step is merging the training and the test set to create a unique dataset. In the datasets, the measurements values and the corresponding subject and activity values associated for each measurement are stored in three different files. So we can see that data is loaded into
+1) First step is merging the training and the test set to create a unique dataset. In the datasets, the measurements values and the corresponding subject and activity values associated for each measurement are stored in three different files. So we can see that data is loaded into 
 
 * subject_test, with 2947 rows and 1 column
 * y_test, with 2947 rows and 1 column
@@ -81,14 +81,16 @@ and
 * y_train, with 7352 rows and 1 column
 * X_train with 7352 rows and 561 columns
 
-Both sets are merged in:
+Both sets are merged in
 
 * subject_all, with 10299 rows and 1 column
 * y_all, with 10299 rows and 1 column
 * X_all with 10299 rows and 561 columns
 
-2. Extracts only the measurements on the mean and standard deviation for each measurement.
-   The features.txt file holds the names of the column variables in the measurements table. These names are assigned to the X_all data frame and after that a new version of X_all is created keeping only those columns whose variable names contain the strings "mean" or "std".
 
+2) Extracts only the measurements on the mean and standard deviation for each measurement.The features.txt file holds the names of the column variables in the measurements table. These names are assigned to the X_all data frame and after that a new version of X_all is created keeping only those columns whose variable names contain the strings "mean" or "std".
 
+3) Uses descriptive activity names to name the activities in the data set. In the y_all data frame activities are representes as numbers. In the activity_labels.txt file provided in the dataset we can find the correspondence between these numbers and the activity they represent. The numbers are changed for the more friendly name of the activity. For instance, 1 = walking. 
+
+4) 
 
